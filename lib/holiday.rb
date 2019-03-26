@@ -57,7 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
       new_holiday = holiday.to_s.capitalize!
       supply_list = []
       new_holiday.each do |x|
-
+        supply_list << x
       end
     end
   end
