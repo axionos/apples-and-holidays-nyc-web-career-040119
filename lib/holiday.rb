@@ -57,7 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_str = holiday.to_s.split("_")
 
       final_holiday = []
-      array.each do |supply_item|
+      holiday_str.each do |supply_item|
         final_holiday << supply_item
       end
       holiday = final_holiday.join(" ")
