@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
         supply_list << x
       end
       new_supply_list = supply_list.join(", ")
-      puts "#{new_holiday}: #{new_supply_list}"
+      puts "  #{new_holiday}: #{new_supply_list}"
     end
   end
 end
