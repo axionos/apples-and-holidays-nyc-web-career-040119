@@ -73,9 +73,9 @@ def all_supplies_in_holidays(holiday_hash)
       new_holiday = holiday.to_s.split("_").map { |e| e.capitalize! }.join(" ")
       # ["fourth", "of", "july"] => ["Fireworks", "BBQ"]
       supply_list = []
-      new_holiday.each do |x|
-        supply_list << x
-      end
+      # new_holiday.each do |x|
+      #   supply_list << x
+      # end
       new_supply_list = supply_list.join(", ")
       puts "  #{new_holiday}: #{new_supply_list}"
     end
