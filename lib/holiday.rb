@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize!}:"
 
     data.each do |holiday, supply|
-      new_holiday = holiday.to_s.split("_").map { |e| e.capitalize! }
+      new_holiday = holiday.to_s.split("_").map { |e| e.capitalize! }.join
       # ["fourth", "of", "july"] => ["Fireworks", "BBQ"]
       binding.pry
       supply_list = []
