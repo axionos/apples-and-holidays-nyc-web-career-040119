@@ -55,7 +55,7 @@ def all_supplies_in_holidays(holiday_hash)
 
     data.each do |holiday, supply|
       new_holiday = holiday.to_s.capitalize!
-      array = []
+      supply_list = []
       new_holiday.each do |x|
 
       end
